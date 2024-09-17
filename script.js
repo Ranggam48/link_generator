@@ -22,6 +22,8 @@ Terima Kasih.`;
 
 function generate() {
 
+    var kalimat = document.querySelector("#kalimat");
+
     let form = document.querySelector(".form");
     var namaNama = document.querySelector("#nama").value;
 
