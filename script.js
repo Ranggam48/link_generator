@@ -1,23 +1,23 @@
 var kalimat = document.querySelector("#kalimat")
     .value = `
-Assalamualaikum wr wb  
+Assalamu'alaikum Wr. Wb
+
 Yth. $nama$
 
-Bismillahirrahmanirrahim
-Tanpa mengurangi rasa hormat,
-kepada Bapak/Ibu/Sdr/i dan teman teman sekalian melalui pesan singkat ini kami ingin mengundang untuk berkenan hadir pada acara pernikahan kami :
+Tanpa mengurangi rasa hormat, perkenankan kami mengundang Bapak/Ibu/Saudara/i, teman sekaligus sahabat, untuk menghadiri acara kami :
 
-                Indah
-                                  &
-                 Aji
+Indah Pertiwi & Aji Triansah
 
-Berikut terlampir link info lengkap dari acara :
-
+Berikut link undangan kami untuk info lengkap dari acara bisa kunjungi :
+ 
 https://indahajiwedding.site/?n=$nama$
 
-Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Sdr/i dan teman teman sekalian berkenan untuk hadir dan memberikan doa restu
+Merupakan suatu kebahagiaan bagi kami apabila Bapak/Ibu/Saudara/i berkenan untuk hadir dan memberikan doa restu.
 
-Wassalamualaikum wr wbzzz`;
+Mohon maaf perihal undangan hanya di bagikan melalui  pesan ini. Terima kasih banyak atas perhatiannya.
+
+Wassalamu'alaikum Wr. Wb.
+Terima Kasih.`;
 
 
 function generate() {
@@ -32,7 +32,7 @@ function generate() {
 
         let namaLink = nama[i].replaceAll(" ", "+") // mengganti spasi pada nema dengan karakter +
 
-        let link = `${kata[0]} ${nama[i]} ${kata[2]}${namaLink}`; //Menggabung kalimat ucapan dengan nama dan link
+        let link = `${kata[0]} ${nama[i]} ${kata[2]}${namaLink} ${kata[4]}`; //Menggabung kalimat ucapan dengan nama dan link
         let hasil = document.createElement("textarea");// Mentarget textarea
         hasil.value = link; // memasukan ucapan pada hasil
         hasil.className = "btn";
