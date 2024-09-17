@@ -22,7 +22,7 @@ Terima Kasih.`;
 
 function generate() {
 
-    var kalimat = document.querySelector("#kalimat");
+    var kalimat = document.querySelector("#kalimat").value;
 
     let form = document.querySelector(".form");
     var namaNama = document.querySelector("#nama").value;
